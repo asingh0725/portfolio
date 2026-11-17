@@ -11,13 +11,7 @@ type SimpleIcon = {
 import portrait from '../assets/about-pic.png'
 import resumePdf from '../assets/resume.pdf'
 import agronomistImg from '../assets/projects/ai-agronomist-advisor.png'
-import planToMeetImg from '../assets/projects/plan-to-meet.png'
-import agverdictImg from '../assets/projects/agverdict.png'
-import spotifyImg from '../assets/projects/spotify-timecapsule.png'
-import adiosImg from '../assets/projects/adios-covid.png'
-import mountainImg from '../assets/projects/mountain-stop.png'
-import shareabiteImg from '../assets/projects/shareabite.png'
-import groceryImg from '../assets/projects/grocery-savvy.png'
+
 import {
   siOpenai,
   siAnthropic,
@@ -27,10 +21,6 @@ import {
   siTypescript,
   siPostgresql,
   siVercel,
-  siAngular,
-  siSpotify,
-  siApple,
-  siFigma,
   siLinkedin,
   siGithub
 } from 'simple-icons/icons'
@@ -42,35 +32,35 @@ const navLinks = [
   { label: 'Contact', href: '#contact' }
 ]
 
-const badges = ['Product Engineering', 'Claude', 'TypeScript + Next.js']
+const badges = ['Backend Architecture', 'Distributed Systems', 'LLM Orchestration']
 
 const logos = [
   { label: 'OpenAI', icon: siOpenai },
   { label: 'Anthropic', icon: siAnthropic },
-  { label: 'React', icon: siReact },
+  { label: 'TypeScript', icon: siTypescript },
   { label: 'Next.js', icon: siNextdotjs },
   { label: 'AWS', icon: siAmazonaws },
-  { label: 'TypeScript', icon: siTypescript },
   { label: 'PostgreSQL', icon: siPostgresql },
+  { label: 'React', icon: siReact },
   { label: 'Vercel', icon: siVercel }
 ]
 
 const experienceBlocks = [
   {
-    title: 'AI & LLM Systems',
-    items: ['Claude + OpenAI', 'RAG + Embeddings', 'Semantic Search', 'Model Context Protocol']
+    title: 'Core Architecture & Backend',
+    items: ['System Architecture', 'API Design', 'Backend-for-Frontend (BFF)', 'Workflow Orchestration (Temporal)', 'Serverless', 'Node.js']
   },
   {
-    title: 'Frontend',
-    items: ['React', 'Next.js', 'Angular', 'TypeScript', 'HTML/CSS']
+    title: 'AI & ML Systems',
+    items: ['LLM Orchestration', 'Anthropic Claude', 'RAG Pipelines', 'AI Agents', 'LangChain']
   },
   {
-    title: 'Backend',
-    items: ['Next.js / NestJS', 'Express + REST APIs', 'PostgreSQL', 'Microservices']
+    title: 'Cloud & Data Infrastructure',
+    items: ['AWS (DynamoDB, ECS, Lambda, CDK, S3)', 'PostgreSQL', 'pgvector', 'Vercel']
   },
   {
-    title: 'Cloud & Deployment',
-    items: ['AWS (Lambda, S3)', 'Vercel', 'Supabase', 'CI/CD']
+    title: 'Languages & Frontend',
+    items: ['TypeScript', 'Python', 'Next.js', 'React', 'Electron']
   }
 ]
 
@@ -78,74 +68,11 @@ const projects = [
   {
     title: 'AI Agronomist Advisor',
     description:
-      'An AI agronomy assistant that turns photos and lab data into research-grounded diagnoses with citations and confidence indicators.',
-    tags: ['RAG + Vision', 'Agritech', 'PWA'],
+      'Architected a full-stack AI application leveraging Claude and OpenAI, implementing provider-agnostic APIs to handle complex reasoning, vision, and embedding workflows. Designed semantic search and retrieval pipelines (RAG) using text and image embeddings to strictly ground AI responses and eliminate hallucinations. Built the end-to-end backend infrastructure to manage LLM orchestration, cost controls, and latency for real-world user workflows.',
+    tags: ['RAG + Vision', 'Provider-Agnostic APIs', 'TypeScript / Node.js'],
     href: 'https://github.com/asingh0725/ai-agronomist-advisor',
-    icons: [siOpenai, siReact],
+    icons: [siOpenai, siTypescript],
     image: agronomistImg
-  },
-  {
-    title: 'PlanToMeet',
-    description:
-      'A mobile-first iMessage extension for finding a common time to meet with ranked results and privacy-first calendar insights.',
-    tags: ['Mobile-First', 'Scheduling', 'Apple-Style UI'],
-    href: 'https://github.com/asingh0725/time-together-message',
-    icons: [siApple, siReact],
-    image: planToMeetImg
-  },
-  {
-    title: 'AgVerdict Next',
-    description:
-      'Production rebuild of a large-scale scouting and recommendations app with offline-first flows and performance upgrades.',
-    tags: ['Angular', 'Offline First', 'Enterprise'],
-    href: 'https://www.youtube.com/watch?v=BdqmFWLTKbE',
-    icons: [siAngular],
-    image: agverdictImg
-  },
-  {
-    title: 'Spotify Time Capsule',
-    description:
-      'Web app that generates a historical playlist using Spotify data with OAuth login and interactive UI.',
-    tags: ['Next.js', 'OAuth', 'React'],
-    href: 'https://github.com/asingh0725/info441-finalproject',
-    icons: [siSpotify, siReact],
-    image: spotifyImg
-  },
-  {
-    title: 'Adios COVID',
-    description:
-      'AWS-native backend with API Gateway + Lambda + S3 for a medical research organization.',
-    tags: ['AWS', 'Lambda', 'API Design'],
-    href: 'https://research.adioscovid.org/about',
-    icons: [siAmazonaws],
-    image: adiosImg
-  },
-  {
-    title: 'Mountain Stop',
-    description:
-      'Hiking companion app with searchable trails, filters, and responsive UI architecture.',
-    tags: ['React', 'API Integration'],
-    href: 'https://github.com/info340-au21/project-asingh0725',
-    icons: [siReact],
-    image: mountainImg
-  },
-  {
-    title: 'Share-a-Bite',
-    description:
-      'A campus-wide food-sharing marketplace with UX flows designed in Figma and built in React.',
-    tags: ['React', 'UI Design'],
-    href: 'https://github.com/asingh0725/share-a-bite',
-    icons: [siFigma, siReact],
-    image: shareabiteImg
-  },
-  {
-    title: 'Grocery Savvy',
-    description:
-      'Prototype for an intuitive grocery planning experience with rapid checkout flows.',
-    tags: ['Prototype', 'Figma'],
-    href: 'https://www.figma.com/proto/N7fcTkr3nnWlIfO30K7viU/Grocery-Savvy',
-    icons: [siFigma],
-    image: groceryImg
   }
 ]
 
@@ -154,21 +81,11 @@ const featuredProjects = [
     title: 'AI Agronomist Advisor',
     summary: 'Research-backed agronomy intelligence for field diagnostics and recommendations.',
     description:
-      'An AI agronomy assistant that turns photos and lab data into research-grounded diagnoses with citations and confidence indicators.',
-    tags: ['RAG + Vision', 'Agritech', 'PWA'],
+      'Architected a full-stack AI application leveraging Claude and OpenAI, implementing provider-agnostic APIs to handle complex reasoning, vision, and embedding workflows. Built the end-to-end backend infrastructure to manage LLM orchestration, cost controls, and latency for real-world user workflows.',
+    tags: ['RAG + Vision', 'Provider-Agnostic APIs', 'TypeScript / Node.js'],
     href: 'https://github.com/asingh0725/ai-agronomist-advisor',
-    icons: [siOpenai, siReact],
+    icons: [siOpenai, siTypescript],
     image: agronomistImg
-  },
-  {
-    title: 'PlanToMeet',
-    summary: 'An iMessage-first scheduling experience with ranked availability insights.',
-    description:
-      'A mobile-first iMessage extension for finding a common time to meet with ranked results and privacy-first calendar insights.',
-    tags: ['Mobile-First', 'Scheduling', 'Apple-Style UI'],
-    href: 'https://github.com/asingh0725/time-together-message',
-    icons: [siApple, siReact],
-    image: planToMeetImg
   }
 ]
 
@@ -468,15 +385,13 @@ export default function App() {
           <div className="animate-fade-up">
             <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.4em] text-white/70 backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-accent" />
-              Product-Focused Full-Stack Engineer
+              Software Engineer
             </div>
             <h1 className="mt-6 font-display text-[clamp(2.6rem,7vw,5.5rem)] font-semibold uppercase tracking-[-0.02em] text-white">
               Product Oriented Software Engineer
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/70">
-              I build production-grade, cloud-native applications and AI-powered products across web3, agriculture,
-              healthcare, and AI-native domains. My work spans TypeScript, React, Next.js, and PostgreSQL, with
-              hands-on experience integrating LLMs, embeddings, and semantic retrieval into real-world systems.
+              Product-Oriented Software Engineer specializing in full-stack architecture, bridging the gap between user-facing clients and complex distributed systems. Proven track record of translating ambiguous technical constraints into scalable, production-ready infrastructure. Expertise in designing robust Backend-for-Frontend (BFF) layers, orchestrating state across asynchronous workflows, and building secure LLM integrations and data pipelines.
             </p>
             <div className="mt-6 flex flex-wrap gap-3 text-[0.6rem] uppercase tracking-[0.35em] text-white/60">
               {badges.map((badge) => (
@@ -520,8 +435,8 @@ export default function App() {
                 <div className="pointer-events-none absolute inset-0 ring-1 ring-white/10" />
               </div>
               <div className="mt-4 flex items-center justify-between text-[0.65rem] uppercase tracking-[0.35em] text-white/60">
-                <span>AI Systems</span>
-                <span>Cloud-Native</span>
+                <span>Backend Architecture</span>
+                <span>Distributed Systems</span>
               </div>
             </div>
           </div>
@@ -563,7 +478,7 @@ export default function App() {
                   onMouseMove={handleCardMove}
                   onMouseLeave={handleCardLeave}
                   style={cardSpotlightStyle}
-                  className="group relative w-[min(90vw,520px)] flex-none overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:border-white/25 hover:shadow-[0_35px_70px_rgba(0,0,0,0.4)] lg:w-[calc(50%-12px)]"
+                  className="group relative w-full flex-none overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:border-white/25 hover:shadow-[0_35px_70px_rgba(0,0,0,0.4)]"
                 >
                   <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
                     <div
@@ -634,43 +549,6 @@ export default function App() {
                 </article>
               ))}
             </div>
-            {maxIndex > 0 ? (
-              <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
-                <div className="flex items-center gap-2">
-                  {featuredProjects.map((project, index) => (
-                    <button
-                      key={project.title}
-                      type="button"
-                      onClick={() => setFeaturedIndex(index)}
-                      className={`h-2.5 w-2.5 rounded-full border border-white/30 transition ${
-                        featuredIndex === index ? 'bg-white/80' : 'bg-white/10'
-                      }`}
-                      aria-label={`Go to ${project.title}`}
-                    />
-                  ))}
-                </div>
-                <div className="flex items-center gap-3 text-[0.6rem] uppercase tracking-[0.35em] text-white/60">
-                  <button
-                    type="button"
-                    onClick={handlePrev}
-                    className="rounded-full border border-white/15 px-3 py-2 transition hover:border-white/60 hover:text-white"
-                  >
-                    Prev
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handleNext}
-                    className="rounded-full border border-white/15 px-3 py-2 transition hover:border-white/60 hover:text-white"
-                  >
-                    Next
-                  </button>
-                </div>
-              </div>
-            ) : (
-              <div className="mt-6 text-[0.65rem] uppercase tracking-[0.35em] text-white/50">
-                Showing all featured work
-              </div>
-            )}
           </div>
         </div>
       </section>
@@ -822,8 +700,7 @@ export default function App() {
           <p className="text-xs uppercase tracking-[0.4em] text-white/50">Contact</p>
           <h2 className="mt-4 font-display text-4xl uppercase tracking-[0.08em]">Let&apos;s Build</h2>
           <p className="mt-6 max-w-2xl text-lg text-white/70">
-            I&apos;m open to AI engineering, full-stack roles, and ambitious side projects. Let&apos;s connect and
-            build something bold.
+            I&apos;m open to backend architecture, platform engineering, and AI/LLM infrastructure roles. Let&apos;s connect and build something bold.
           </p>
           <div className="mt-8 flex flex-wrap gap-6 text-sm uppercase tracking-[0.3em]">
             <a
